@@ -111,7 +111,7 @@ class ArrayStatsTest {
     @Test
     void getStatsEdgeCaseTest3() {
         // very large array, limited ints
-        arr = new int[100_000];
+        arr = new int[100_000_000];
         Arrays.fill(arr, Integer.MAX_VALUE);
         arrayStats.getStats(arr);
         assertEquals("Median: 2147483647\nMean: 2147483647\nMode: 2147483647\nRange: 0\n",
